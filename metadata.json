@@ -1,0 +1,7 @@
+{
+  "name": "IffiDB Admin Panel",
+  "description": "A professional database management system with a modern Admin Panel, dynamic theming, and execution logs. Created by Iftikhar Ali.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

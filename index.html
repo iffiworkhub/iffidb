@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IffiDB - Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Dynamic Theme Variables */
+      :root {
+        --color-primary: #3b82f6; /* Default Blue */
+        --color-secondary: #1e293b;
+      }
+      .theme-purple {
+        --color-primary: #8b5cf6;
+      }
+      .theme-emerald {
+        --color-primary: #10b981;
+      }
+      .theme-rose {
+        --color-primary: #f43f5e;
+      }
+      
+      body {
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      /* Scrollbar for logs */
+      .logs-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .logs-scrollbar::-webkit-scrollbar-track {
+        background: #1e1e1e; 
+      }
+      .logs-scrollbar::-webkit-scrollbar-thumb {
+        background: #555; 
+        border-radius: 4px;
+      }
+      .logs-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #777; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
